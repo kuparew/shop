@@ -1,0 +1,56 @@
+
+.card .fa {  
+    font-size: 64px; 
+    transition: font-size 0.3s ease; 
+}
+
+@media (max-width: 1200px) {
+    .card .fa {  
+        font-size: 54px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .card .fa {  
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 900px) {
+    .card .fa {  
+        font-size: 34px;
+    }
+}
+
+
+@media (max-width: 690px) {
+    .card-wrapper {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .card {
+        width: 100px;
+        margin: 10px auto;
+    }
+
+    .button-container {
+        position: relative;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 484px) {
+    .header-pagename {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 402px) {
+    .logo {
+    font-size: 16px;
+    }
+}
+
+

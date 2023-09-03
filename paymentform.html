@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    
+    <form class="paymentForm">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
+        <br>
+        
+        <label for="cardHolder">Cardholder Name:</label>
+        <input type="text" id="cardHolder" name="cardHolder" placeholder="Enter cardholder name" required>
+        <br>
+        
+        <label for="expirationDate">Expiration Date:</label>
+        <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" required>
+        <br>
+        
+        <label for="cvv">CVV Code:</label>
+        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV code" required>
+        <br>
+        
+        <input type="submit" value="Pay">
+    </form>
+
+</body>
+</html>

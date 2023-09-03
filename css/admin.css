@@ -1,0 +1,60 @@
+
+
+h1 {
+    color: rgba(251, 0, 0, 0.664);
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.chair {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: transparent;
+    bottom: 140px;
+    z-index: -1;
+  }
+  
+  .chair .backrest {
+    width: 120px;
+    height: 100px;
+    background-color: #000000;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    z-index: 2;
+  }
+  
+  .chair .seat {
+    width: 150px;
+    height: 20px;
+    background-color: #000000;
+    position: absolute;
+    top: 100px;
+    left: 25px;
+    z-index: 1;
+  }
+  
+  .chair .leg {
+    width: 20px;
+    height: 80px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+  }
+  
+  .chair .leg.left {
+    left: 25px;
+  }
+  
+  .chair .leg.right {
+    right: 25px;
+  }
+  
+  .menu{
+    text-align: center;
+    position: relative;
+    margin: auto;
+  }

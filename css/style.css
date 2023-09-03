@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Philosopher:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+
+body {
+    margin: 0; 
+    padding: 0; 
+    background-color: #f0f0f0; 
+}
+header{
+    height: 60px;
+    background-color: rgb(148, 193, 198);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: inset 3px 3px 3px 3px rgb(42, 133, 143);
+
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.logo{
+    display: block;
+    font-size: 1.8rem;
+    border: solid 1px;
+    box-shadow: 3px 1px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
+
+.countdown {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/**Карточки*/
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    border: 1px solid rgba(1, 161, 52, 0,3);
+    border-radius: 10px;
+    width: 80%;
+    height: 600px;
+    perspective: 1000px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    background-color: #f0f0f0; 
+    box-shadow: 0 0 20px rgba(0, 128, 0, 0.5); 
+    transform-style: preserve-3d; 
+    transition: transform 0.5s;
+    overflow: auto; 
+    transform: translateZ(150px);
+}
+
+.card-wrapper:hover {
+    transform: rotateY(10deg); 
+}
+
+.card {
+    border: 1px solid black;
+    height: 100px;
+    width: calc(10% - 20px); 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+    transform-style: preserve-3d;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    margin: 10px;
+}
+
+.card:hover {
+    transform: rotateY(10deg) scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 690px) {
+    .card-wrapper {
+        flex-direction: column;
+        align-items: center;
+        height: auto; 
+    }
+
+    .card {
+        width: 100px; 
+        margin: 10px auto; 
+    }
+
+    .button-container {
+        position: relative;
+    }
+}
+
+.card i {
+    transform: translateZ(50px);
+    max-height: 100%;
+}
+
+
+.card .fa{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+/**-------------*/
+.selected {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: rotateY(10deg) scale(1.05);
+}
+
+.button-container {
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100px; 
+}
+
+
+.price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+}
+
+
+.card i {
+    transform: translateZ(2px); 
+
+}
+
+.selected {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: rotateY(10deg) scale(1.05); 
+}
+
+.card .fa{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
